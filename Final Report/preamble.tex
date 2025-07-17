@@ -1,0 +1,40 @@
+%% If you need to define macros or include more packages, do all that here.
+%% Otherwise leave this file alone.  DO NOT type your paper text in here.
+
+\usepackage{color,colortbl}
+
+\setcounter{secnumdepth}{3}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\crefname{claim}{claim}{claims}
+\Crefname{claim}{Claim}{Claims}
+\crefname{app-corollary}{corollary}{corollaries}
+\Crefname{app-corollary}{Corollary}{Corollaries}
+\crefname{app-definition}{definition}{definitions}
+\Crefname{app-definition}{Definition}{Definitions}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{lemma}{lemma}{lemmata}
+\Crefname{lemma}{Lemma}{Lemmata}
+\crefname{app-lemma}{lemma}{lemmata}
+\Crefname{app-lemma}{Lemma}{Lemmata}
+\crefname{app-proposition}{proposition}{proposition}
+\Crefname{app-proposition}{Proposition}{Proposition}
+\crefname{app-theorem}{theorem}{theorems}
+\Crefname{app-theorem}{Theorem}{Theorems}
+\newcommand{\creflastconjunction}{, and~} %Implments the Oxford comma for non-compressed lists in \cref
+\newcommand{\crefrangeconjunction}{--} %Implements n-dash for compressed lists in \cref
